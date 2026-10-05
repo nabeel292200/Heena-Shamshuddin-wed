@@ -21,7 +21,7 @@ export const CoupleSection: React.FC = () => {
             THE BLESSED COUPLE
           </span>
           <h2 className="text-3xl font-playfair font-bold text-[#D4AF37] mb-4">
-            Groom & Bride
+            Bride & Groom
           </h2>
 
           {/* Top Gold Flower Divider */}
@@ -43,7 +43,7 @@ export const CoupleSection: React.FC = () => {
           <div className="w-full h-[310px] rounded-[22px] overflow-hidden relative border border-[rgba(212,175,55,0.3)]">
             <img
               src={coupleData.image || "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop"}
-              alt="Arshi & Arish"
+              alt="Heena & Shamshuddin"
               className="w-full h-full object-cover object-[50%_35%] group-hover:scale-105 transition-transform duration-700"
               loading="lazy"
             />
@@ -60,7 +60,7 @@ export const CoupleSection: React.FC = () => {
           className="mb-6"
         >
           <p className="text-2xl sm:text-3xl font-calligraphy text-[#D4AF37]">
-            {coupleData.groomName} & {coupleData.brideName}
+            {coupleData.brideName} & {coupleData.groomName}
           </p>
         </motion.div>
 
@@ -79,7 +79,7 @@ export const CoupleSection: React.FC = () => {
 
         {/* Family Cards Side by Side */}
         <div className="grid grid-cols-2 gap-3 text-center">
-          {/* Groom's Family Card */}
+          {/* Bride's Family Card */}
           <motion.div
             initial={{ opacity: 0, x: -35, y: 25 }}
             whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -88,20 +88,26 @@ export const CoupleSection: React.FC = () => {
             className="bg-[#F4ECE6] border border-[rgba(212,175,55,0.3)] rounded-[24px] p-4 shadow-md flex flex-col items-center justify-center"
           >
             <span className="text-[8px] uppercase tracking-[0.2em] text-[#6A859C] font-bold mb-1.5 font-poppins">
-              GROOM'S FAMILY
+              BRIDE'S FAMILY
             </span>
             <span className="text-xl font-calligraphy text-[#D47E84] mb-2">
-              Arish
+              {coupleData.brideShort || "Heena"}
             </span>
             <span className="text-[7px] uppercase tracking-widest text-[#D4AF37]/70 font-semibold mb-1 font-poppins">
-              SON OF
+              DAUGHTER OF
             </span>
             <span className="text-[11px] font-playfair text-[#D4AF37] font-medium leading-tight">
-              Lt. Rafat Aslam Siddiqui
+              Mohammed Rafiq
+            </span>
+            <span className="text-[10px] text-[#B78846] italic my-0.5">
+              &
+            </span>
+            <span className="text-[11px] font-playfair text-[#D4AF37] font-medium leading-tight">
+              Tehrun nisa
             </span>
           </motion.div>
 
-          {/* Bride's Family Card */}
+          {/* Groom's Family Card */}
           <motion.div
             initial={{ opacity: 0, x: 35, y: 25 }}
             whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -110,22 +116,22 @@ export const CoupleSection: React.FC = () => {
             className="bg-[#F4ECE6] border border-[rgba(212,175,55,0.3)] rounded-[24px] p-4 shadow-md flex flex-col items-center justify-center"
           >
             <span className="text-[8px] uppercase tracking-[0.2em] text-[#6A859C] font-bold mb-1.5 font-poppins">
-              BRIDE'S FAMILY
+              GROOM'S FAMILY
             </span>
             <span className="text-xl font-calligraphy text-[#D47E84] mb-2">
-              Arshi
+              {coupleData.groomShort || "Shamshuddin"}
             </span>
             <span className="text-[7px] uppercase tracking-widest text-[#D4AF37]/70 font-semibold mb-1 font-poppins">
-              DAUGHTER OF
+              SON OF
             </span>
             <span className="text-[11px] font-playfair text-[#D4AF37] font-medium leading-tight">
-              Lt. Shahjahan Khan
+              Wazeer Pasha
             </span>
             <span className="text-[10px] text-[#B78846] italic my-0.5">
               &
             </span>
             <span className="text-[11px] font-playfair text-[#D4AF37] font-medium leading-tight">
-              Mrs. Jaharan Khan
+              Mubeen Taj
             </span>
           </motion.div>
         </div>

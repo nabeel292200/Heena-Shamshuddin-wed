@@ -79,7 +79,7 @@ export const HeroSection: React.FC = () => {
         className="relative z-10 pt-2"
       >
         <span className="text-2xl font-calligraphy text-white tracking-widest block">
-          A & A
+          H & S
         </span>
       </motion.div>
 
@@ -98,7 +98,7 @@ export const HeroSection: React.FC = () => {
         {/* Stacked Serif Names */}
         <div className="flex flex-col items-center my-2">
           <h1 className="text-4xl sm:text-5xl font-playfair font-normal text-white tracking-wide leading-none drop-shadow-sm my-1">
-            {coupleData.groomName || "Arish Siddiqui"}
+            {coupleData.brideName || "Heena Parween"}
           </h1>
 
           <span className="text-3xl sm:text-4xl font-calligraphy text-white my-3.5 block italic">
@@ -106,7 +106,7 @@ export const HeroSection: React.FC = () => {
           </span>
 
           <h1 className="text-4xl sm:text-5xl font-playfair font-normal text-white tracking-wide leading-none drop-shadow-sm my-1">
-            {coupleData.brideName || "Arshi Khan"}
+            {coupleData.groomName || "Shamshuddin KS(Fayaz)"}
           </h1>
         </div>
 
@@ -117,7 +117,7 @@ export const HeroSection: React.FC = () => {
 
         {/* Wedding Date with Dots */}
         <div className="text-sm sm:text-base tracking-[0.35em] text-white font-medium font-poppins mb-2">
-          1 4 • 1 1 • 2 0 2 6
+          2 9 • 1 0 • 2 0 2 6
         </div>
 
 

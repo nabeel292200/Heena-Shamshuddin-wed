@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Flower2, Heart } from "lucide-react";
+import { coupleData } from "../../data/weddingData";
 
 export const ClosingSection: React.FC = () => {
   return (
@@ -46,12 +47,12 @@ export const ClosingSection: React.FC = () => {
 
         {/* Monogram Seal / Signature */}
         <div className="flex items-center gap-2 text-[#D4AF37] font-calligraphy text-2xl my-2">
-          <span>Arish</span>
+          <span>{coupleData.brideShort || "Heena"}</span>
           <Heart className="w-4 h-4 fill-[#B78846] text-[#B78846]" />
-          <span>Arshi</span>
+          <span>{coupleData.groomShort || "Shamshuddin"}</span>
         </div>
         <p className="text-[10px] uppercase tracking-[0.25em] text-[#1A1A1A]/40 font-poppins mt-2">
-          14 NOVEMBER 2026 • BHOPAL
+          29 OCTOBER 2026 • KORATAGERE
         </p>
       </motion.div>
     </footer>

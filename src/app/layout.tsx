@@ -9,20 +9,20 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Arshi & Arish • Royal Wedding",
-  description: "You are joyfully invited to the sacred Nikah and royal Walima celebration of Arshi Khan & Arish Siddiqui on Saturday, 14 November 2026.",
-  keywords: "Arshi Arish wedding, Islamic wedding invitation, digital Nikah invitation, luxury wedding app, WhatsApp digital card",
+  title: "Heena & Shamshuddin • Wedding Invitation",
+  description: "You are cordially invited to the sacred Nikah and wedding celebration of Heena Parween & Shamshuddin KS(Fayaz) on Thursday, 29 October 2026 at Koratagere.",
+  keywords: "Heena Shamshuddin wedding, Islamic wedding invitation, digital Nikah invitation, luxury wedding app, Farooqiya Masjid Koratagere",
   openGraph: {
-    title: "Arshi & Arish • Royal Wedding",
-    description: "Witness the sacred union of Arshi & Arish on Saturday, 14 November 2026.",
-    url: "https://arshi-and-arish-wedding.invitation/2026",
-    siteName: "Arshi & Arish Wedding Celebration",
+    title: "Heena & Shamshuddin • Wedding Invitation",
+    description: "Witness the sacred union of Heena Parween & Shamshuddin KS(Fayaz) on Thursday, 29 October 2026.",
+    url: "https://heena-and-shamshuddin-wedding.invitation/2026",
+    siteName: "Heena & Shamshuddin Wedding Celebration",
     images: [
       {
         url: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop",
         width: 1200,
         height: 630,
-        alt: "Arshi & Arish Royal Wedding Invitation",
+        alt: "Heena & Shamshuddin Wedding Invitation",
       },
     ],
     locale: "en_US",
