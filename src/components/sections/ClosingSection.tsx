@@ -5,6 +5,23 @@ import { motion } from "framer-motion";
 import { Flower2, Heart } from "lucide-react";
 import { coupleData } from "../../data/weddingData";
 
+const InstagramIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.7"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+    aria-hidden="true"
+  >
+    <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" ry="5.5" />
+    <circle cx="12" cy="12" r="4.2" />
+    <circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none" />
+  </svg>
+);
+
 export const ClosingSection: React.FC = () => {
   return (
     <footer id="closing" className="py-16 px-5 pb-24 relative z-10 bg-[transparent] text-center border-t border-[rgba(212,175,55,0.3)]/60 overflow-hidden">
@@ -54,6 +71,22 @@ export const ClosingSection: React.FC = () => {
         <p className="text-[10px] uppercase tracking-[0.25em] text-[#1A1A1A]/40 font-poppins mt-2">
           29 OCTOBER 2026 • KORATAGERE
         </p>
+
+        {/* Crafted by Zetron.Tech */}
+        <div className="mt-8 pt-6 border-t border-[#B78846]/20 flex items-center justify-center w-full">
+          <a
+            href="https://www.instagram.com/zetron.tech/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Crafted by Zetron Tech on Instagram"
+            className="inline-flex items-center gap-2.5 text-[#B78846] hover:text-[#D4AF37] transition-all duration-300 group opacity-90 hover:opacity-100"
+          >
+            <InstagramIcon className="w-4 h-4 stroke-[1.6] shrink-0 transition-transform duration-300 group-hover:scale-110" />
+            <span className="font-playfair text-[10px] sm:text-[11px] tracking-[0.25em] uppercase font-medium whitespace-nowrap">
+              CRAFTED BY ZETRON.TECH
+            </span>
+          </a>
+        </div>
       </motion.div>
     </footer>
   );
